@@ -1,0 +1,54 @@
+*{
+    font:Arial;
+}
+h1 {
+    font-size: 100px;
+    color:blue;
+}
+
+#name{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#pic{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#dance{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#gym{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#code{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.barItem {
+    margin-left: 20px;
+    font-size: 40px;
+    margin-right: 80px;
+    
+}
+
+.sec {
+    padding-left: 20px;
+}
+
+a:hover{
+    background-color:orange;
+}

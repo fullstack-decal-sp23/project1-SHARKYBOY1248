@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<div style = "max-height:550px;overflow-y:auto;">
+<head>
+    <title> Web Page</title>
+    <meta name="author" content="Ajit Kadaveru" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="bar" style = "display:flex;flex-basis: 200px; background-color: yellow;">
+    <a href="#Home" class="barItem">Home</a>
+    <a href="#About" class = "barItem">About</a>
+    <a href="#Work" class = "barItem">Work</a>
+    <a href="#Contact" class = "barItem">Contact</a>
+    <a href = "https://www.youtube.com/channel/UC-afO7ps28xks1GYTBM30Kg?app=desktop" class = "barItem"  target="_blank">YouTube</a>
+</div>
+<div style = "display:grid;padding:30px;background-color: black;">
+    <h1 id = "name">Ajit Kadaveru</h1>
+    <div id = "pic">
+        <img src = "ajit.jpeg" style = "width:250px">
+    </div>
+    <div id = "gym">
+        <img src = "gym.jpeg" style = "width:100px;margin-right:0px;">
+    </div>
+    <div id = "dance">
+        <img src = "dance.png" style = "width:100px">
+    </div>
+    <div id = "code">
+        <img src = "code.png" style = "width:100px">
+    </div>
+</div>
+<div class = "sec" id = "About">
+    <h2><u>Who Am I?</u></h1>
+    <p style="font-size:20px" >
+       I am a 3rd year Computer Science major at UC Berkeley. My academic interests mainly lie in Algorithms and Software Development. I enjoy lifting, dancing, coding.   Please check out my youtube channel linked above! I try to upload fun and entertaining Vlogs. 
+    </p>
+</div>
+
+<div class = "sec" id = "Work">
+    <h2><u>My Work</u></h1>
+    <h3> Amazon</h3>
+    <p style="font-size:20px"> Worked with Amazon Neptune, a powerful graph database service, and AWS Lambda, a serverless
+        computing platform, to implement a more efficient event-based system to detect anomalies in customer
+        post-order data for groceries on Amazon Fresh. Programmed in Java and Typescript.</p>
+    <h3 > MITRE </h3>
+    <p style="font-size:20px"> Worked with Senior Data Analyst to develop a good heuristic for measuring the similarity between the
+        geospatial trajectories of two different people, and created good clusterings of a large dataset populated
+        with 50,000+ people over a span of two years using this heuristic. Programmed in Python. </p>
+    <h3 > Serco </h3>
+        <p style="font-size:20px"> Created a Java web app using an H2 database for storing test datasets (images or videos). Created
+            RESTful API endpoints for creating, reading, updating, and deleting datasets. Used a Machine Learning
+            Algorithm to suggest labels for incoming data which the user can approve or deny.</p>
+</div>
+</div>
+</html>
+<html>
+<div class = "sec" id = "Contact" style = "position:fixed;bottom:0;width:100%;background-color:orange;">
+    <h2><u>Contact Me!</u></h1>
+    <h4>Ajit Kadaveru</h4>
+    <h5>ajit.kadaveru@berkeley.edu</h5>
+    <h6>(703) - 689 - 1667</h6>
+    <form id = "send">
+        <label>Name:</label>
+        <input type="text" id="name" style = "width:100px;">
+        <br>
+        <br>
+        <label>Message:</label>
+        <input type="text" id="message"  rows="5"  style = "width:400px;">
+        <br>
+        <br>
+    </form>
+    <button type = "submit" form = "send" onclick="myFunction()">Send!</button>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("send");
+            var n = x.elements[0].value;
+            var text = x.elements[1].value;
+            document.getElementById("send").reset();
+            alert("Thanks for sending \"" + text + "\", " + n);
+        }
+    </script>
+</div>
+</html>
